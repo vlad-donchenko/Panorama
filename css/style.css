@@ -1,0 +1,19 @@
+@font-face{
+   	font-family: "SegoeUIRegular";
+    src: url("../fonts/SegoeUI/SegoeUIRegular/SegoeUIRegular.woff");
+    font-style: normal;
+    font-weight: 400;
+}
+*{
+	box-sizing: border-box;
+}
+html,
+body{
+	height: 100%;
+}
+body{
+	font-family: "SegoeUIRegular";
+	margin: 0;
+	font-size: 16px;
+	color: #000;
+}
