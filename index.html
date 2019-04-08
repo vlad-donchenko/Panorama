@@ -6,7 +6,7 @@
 	<meta charset="utf-8">
 	<!-- <base href="/"> -->
 
-	<title>Septa</title>
+	<title>Panorama</title>
 	<meta name="description" content="">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,6 +23,8 @@
 	<meta name="theme-color" content="#fff">
 	<!-- Custom Browsers Color End -->
 	<link rel="stylesheet" href="css/bootstrap-grid.min.css">
+	<link rel="stylesheet" href="css/jquery.fancybox.min.css">
+	<link rel="stylesheet" href="css/slick.css">
 	<link rel="stylesheet" href="css/style.css">
 
 </head>
@@ -31,13 +33,446 @@
 
 	<!-- Custom HTML -->
 	<header>
-		<div class="main_header_background">
-			
+		<div class="main_header_background" style="background-image: url('img/best-foundations-black-skin.jpg')">
+			<div class="header_logo_and_button_wrapper">
+				<div class="header_large_logo_wrapper">
+					<a href="#">
+						<img src="img/photo-black.png" alt="">
+					</a>
+				</div>
+				<div class="header_button_wrapper">
+					<a href="#" class="btn_gray">Забронировать</a>
+					<a href="#" class="btn_gray">Наши залы</a>
+				</div>	
+			</div>
+		</div>
+		<div class="header-menu-wrapper">
+			<div class="container header-menu-wrapper-container">
+				<div class="row">
+					<div class="col-12 header-menu-wrapper-column">
+						<div class="header-menu-wrapper-container-image">
+							<a href="#">
+								<img src="img/photo-black.png" alt="">
+							</a>
+						</div>
+						<div class="navigation_main_wrapper">
+							<nav>
+								<ul class="navigation_list list-clear">
+									<li class="menu_active">
+										<a href="#">Залы</a>
+									</li>
+									<li>
+										<a href="#">Забронировать</a>
+									</li>
+									<li>
+										<a href="#">Цены</a>
+									</li>
+									<li>
+										<a href="#">Правила</a>
+									</li>
+									<li>
+										<a href="#">Production</a>
+									</li>
+									<li>
+										<a href="#">Контакты</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+					</div>
+				</div>
+			</div>
 		</div>
 	</header>
-
+	<main>
+		<section class="s-hall">
+			<div class="container-fluid title-container">
+				<div class="row">
+					<div class="col-12 title-column">
+						<h2>
+							Залы
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container-fluid">
+				<div class="row_custom hall-item-row">
+					<div class="col-custom_hall col-custom_hall-smaller">
+						<div class="hall_wrapper-image-box">
+							<img src="img/camera-vertical.png" alt="">
+						</div>
+					</div>
+					<div class="col-custom_hall col-custom_hall-large">
+						<div class="hall_wrapper-content-box">
+							<div class="hall_name">
+								Зал Циклорама
+							</div>
+							<div class="hall_text">
+								<p>
+									3ал «Циклорама» — это 170 кв.м открытого пространства с высотой потолка 4,5 метра. В зале есть угловая циклорама, фотофоны и, по желанию и предварительному запросу клиента. Это идеальное пространство для фото и видео съемок, конференций, презентаций, ивентов закрытого типа.
+								</p>
+							</div>
+							<div class="hall_button">
+								<a href="#" class="btn-transparent">Забронировать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row_custom hall-item-row">
+					<div class="col-custom_hall col-custom_hall-smaller">
+						<div class="hall_wrapper-image-box">
+							<img src="img/hall-vertical.png" alt="">
+						</div>
+					</div>
+					<div class="col-custom_hall col-custom_hall-large">
+						<div class="hall_wrapper-content-box">
+							<div class="hall_name">
+								Зал Кухня
+							</div>
+							<div class="hall_text">
+								<p>
+									3ал «Кухня» — это 170 кв.м открытого пространства с высотой потолка 4,5 метра. В зале есть угловая циклорама, фотофоны и, по желанию и предварительному запросу клиента. Это идеальное пространство для фото и видео съемок, конференций, презентаций, ивентов закрытого типа.
+								</p>
+							</div>
+							<div class="hall_button">
+								<a href="#" class="btn-transparent">Забронировать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="row_custom hall-item-row">
+					<div class="col-custom_hall col-custom_hall-smaller">
+						<div class="hall_wrapper-image-box">
+							<img src="img/hall-bathroom.png" alt="">
+						</div>
+					</div>
+					<div class="col-custom_hall col-custom_hall-large">
+						<div class="hall_wrapper-content-box">
+							<div class="hall_name">
+								Зал Душ
+							</div>
+							<div class="hall_text">
+								<p>
+									3ал «Душ» — это 170 кв.м открытого пространства с высотой потолка 4,5 метра. В зале есть угловая циклорама, фотофоны и, по желанию и предварительному запросу клиента. Это идеальное пространство для фото и видео съемок, конференций, презентаций, ивентов закрытого типа.
+								</p>
+							</div>
+							<div class="hall_button">
+								<a href="#" class="btn-transparent">Забронировать</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-galery">
+			<div class="container-fluid">
+				<div class="row">
+					<div class="col-12 galery-column">
+						<div class="galery-column-wrapper">
+							<div class="row no-gutters">
+								<div class="col-4 galery-item">
+									<a href="img/g-1.png" data-fancybox="gallery">
+										<img src="img/g-1.png" alt="">
+									</a>
+								</div>
+								<div class="col-4 galery-item">
+									<a  href="img/g-2.png" data-fancybox="gallery">
+										<img src="img/g-2.png" alt="">
+									</a>
+								</div>
+								<div class="col-4 galery-item">
+									<a href="img/g-3.png" data-fancybox="gallery">
+										<img src="img/g-3.png" alt="">
+									</a>
+								</div>
+								<div class="col-4 galery-item">
+									<a href="img/g-4.png" data-fancybox="gallery">
+										<img src="img/g-4.png" alt="">
+									</a>
+								</div>
+								<div class="col-4 galery-item">
+									<a href="img/g-5.png" data-fancybox="gallery">
+										<img src="img/g-5.png" alt="">
+									</a>
+								</div>
+								<div class="col-4 galery-item">
+									<a href="img/g-6.png" data-fancybox="gallery">
+										<img src="img/g-6.png" alt="">
+									</a>
+								</div>
+							</div>
+							<div class="row more-galery-button-row">
+								<div class="col-12 more-galery-button">
+									<button href="#" class="btn-transparent">
+										Показать еще...
+									</button>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-price-list">
+			<div class="container-fluid title-container">
+				<div class="row">
+					<div class="col-12 title-column">
+						<h2>
+							Цены
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 table_price_col">
+						<div class="table_price_col-wrapper">
+							<table>
+								<tbody>
+									<tr>
+										<td>Зал Циклорама (с 9:00 до 21:00)</td>
+										<td>400 грн./час</td>
+									</tr>
+									<tr>
+										<td>Зал Душ (с 9:00 до 21:00)</td>
+										<td>200 грн./час</td>
+									</tr>
+									<tr>
+										<td>Зал Гостиная (с 9:00 до 21:00)</td>
+										<td>200 грн./час</td>
+									</tr>
+									<tr>
+										<td>Залы Циклорама+душ (с 9:00 до 21:00)</td>
+										<td>550 грн./час</td>
+									</tr>
+									<tr>
+										<td>Гримерка (с 9:00 до 21:00)</td>
+										<td>50 грн./час</td>
+									</tr>
+									<tr>
+										<td>Аренда студии (с 21:00 до 9:00)</td>
+										<td>+25% к цене студии (бронь от 3-х часов)</td>
+									</tr>
+									<tr>
+										<td>Команда более 5 человек</td>
+										<td>+ 100 грн. за следующего человека</td>
+									</tr>
+									<tr>
+										<td>Метр нового/испорченного фона</td>
+										<td>250 грн.</td>
+									</tr>
+									<tr>
+										<td>Повреждение/сильное загрязнение зала Циклорама</td>
+										<td>от 400 грн.</td>
+									</tr>
+								</tbody>
+							</table>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section class="s-production">
+			<div class="container-fluid title-container">
+				<div class="row">
+					<div class="col-12 title-column">
+						<h2>
+							PRODUCTION
+						</h2>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row">
+					<div class="col-12 main-slider-column">
+						<div class="product-slider-box">	
+						<div class="product-slider-wrapper">
+							<div class="product-slider">
+								<div class="product-slider-item">
+									<div class="product-slider-item-wrapper">
+										<div class="product-slider-item-wrapper-image">
+											<img src="img/man.png" alt="">
+										</div>
+										<div class="product-slider-item-wrapper-content">
+											<div class="product-slider-pers-name">
+												Богдан Пикунец
+											</div>	
+											<div class="product-slider-pers-type">
+												Аэровидеосъемка
+											</div>
+											<div class="product-slider-link">
+												<a data-fancybox="cl-group" href="https://source.unsplash.com/ePOH0oKeOjE/1600x900" class="btn-shadow">
+													Портфолио
+													<span class="camera_icon"></span>
+												</a>
+												<div class="hidden">
+													<a data-fancybox="cl-group" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<div class="product-slider-item">
+									<div class="product-slider-item-wrapper">
+										<div class="product-slider-item-wrapper-image">
+											<img src="img/man.png" alt="">
+										</div>
+										<div class="product-slider-item-wrapper-content">
+											<div class="product-slider-pers-name">
+												Богдан Пикунец
+											</div>	
+											<div class="product-slider-pers-type">
+												Аэровидеосъемка
+											</div>
+											<div class="product-slider-link">
+												<a data-fancybox="cl-group-1" href="https://source.unsplash.com/ePOH0oKeOjE/1600x900" class="btn-shadow">
+													Портфолио
+													<span class="camera_icon"></span>
+												</a>
+												<div class="hidden">
+													<a data-fancybox="cl-group-1" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-1" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-1" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<div class="product-slider-item">
+									<div class="product-slider-item-wrapper">
+										<div class="product-slider-item-wrapper-image">
+											<img src="img/man.png" alt="">
+										</div>
+										<div class="product-slider-item-wrapper-content">
+											<div class="product-slider-pers-name">
+												Богдан Пикунец
+											</div>	
+											<div class="product-slider-pers-type">
+												Аэровидеосъемка
+											</div>
+											<div class="product-slider-link">
+												<a data-fancybox="cl-group-2" href="https://source.unsplash.com/ePOH0oKeOjE/1600x900" class="btn-shadow">
+													Портфолио
+													<span class="camera_icon"></span>
+												</a>
+												<div class="hidden">
+													<a data-fancybox="cl-group-2" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-2" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-2" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<div class="product-slider-item">
+									<div class="product-slider-item-wrapper">
+										<div class="product-slider-item-wrapper-image">
+											<img src="img/man.png" alt="">
+										</div>
+										<div class="product-slider-item-wrapper-content">
+											<div class="product-slider-pers-name">
+												Богдан Пикунец
+											</div>	
+											<div class="product-slider-pers-type">
+												Аэровидеосъемка
+											</div>
+											<div class="product-slider-link">
+												<a data-fancybox="cl-group-3" href="https://source.unsplash.com/ePOH0oKeOjE/1600x900" class="btn-shadow">
+													Портфолио
+													<span class="camera_icon"></span>
+												</a>
+												<div class="hidden">
+													<a data-fancybox="cl-group-3" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-3" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-3" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+								<div class="product-slider-item">
+									<div class="product-slider-item-wrapper">
+										<div class="product-slider-item-wrapper-image">
+											<img src="img/man.png" alt="">
+										</div>
+										<div class="product-slider-item-wrapper-content">
+											<div class="product-slider-pers-name">
+												Богдан Пикунец
+											</div>	
+											<div class="product-slider-pers-type">
+												Аэровидеосъемка
+											</div>
+											<div class="product-slider-link">
+												<a data-fancybox="cl-group-4" href="https://source.unsplash.com/ePOH0oKeOjE/1600x900" class="btn-shadow">
+													Портфолио
+													<span class="camera_icon"></span>
+												</a>
+												<div class="hidden">
+													<a data-fancybox="cl-group-4" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-4" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+													<a data-fancybox="cl-group-4" data-thumb="https://source.unsplash.com/mbKApJz6RSU/100x75" href="https://source.unsplash.com/W-jDdHeoSyY/1600x900"></a>
+												</div>
+											</div>
+										</div>
+									</div>	
+								</div>
+							</div>
+						</div>
+					</div>
+						<div class="slider-navigation">
+							<button class="prev-prod"></button>
+							<button class="next-prod"></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="map-wrapper">
+			<div class="is-map-box">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.416214546513!2d30.37245421526455!3d50.43334759647885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb8428daf223%3A0xa4ac50aa5627d2b8!2z0LLRg9C70LjRhtGPINCv0LrRg9Cx0LAg0JrQvtC70LDRgdCwLCAyLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1554760786473!5m2!1suk!2sua" allowfullscreen></iframe>
+			</div>
+			<div class="contacts-information">
+				<div class="white-title">
+					Контакты 
+				</div>
+				<div class="contacts-content">
+					<div class="contacts-phone">
+						<span class="cont_icon phone_icon"></span>
+						<a href="tel:+38 096 332 24 24">+38 096 332 24 24</a>
+					</div>
+					<div class="contacts-address">
+						<address>
+							<span class="cont_icon location_icon"></span>
+							ул. Якуба Коласа 2В, Киев, Украина
+						</address>
+					</div>
+					<div class="contacts-mail">
+						<span class="cont_icon mail_icon"></span>
+						<a href="mailto:panoramaproduction2@gmail.com">panoramaproduction2@gmail.com</a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="copyright-column">
+			<div class="copyright">
+				<p>Panorama Production  © 2019</p>
+			</div>
+			<div class="developer">
+				<a href="#" class="developers_logo">
+					<span class="developers_text">Сделано в Organica</span>
+					<img src="img/organice_logo.png" alt="">
+				</a>
+			</div>
+		</div>
+	</footer>
 	<!-- Custom js -->
 	<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery.fancybox.min.js"></script>
+	<script src="js/slick.min.js"></script>
 	<script src="js/common.js"></script>
 </body>
 </html>
