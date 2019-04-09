@@ -56,25 +56,38 @@
 							</a>
 						</div>
 						<div class="navigation_main_wrapper">
-							<nav>
+							<div class="burger_and_phone_header">
+								<button class="burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</button>
+								<div class="phone_header-visible_sm">
+								<a href="tel:0963322424">+38 096 332 24 24</a>
+								</div>
+							</div>
+							<nav class="main-nav__wrapper__nav">
+								<div class="hidden_logo">
+									<img src="img/photo-black.png" alt="">
+								</div>
 								<ul class="navigation_list list-clear">
-									<li class="menu_active">
-										<a href="#">Залы</a>
+									<li>
+										<a href="#hall">Залы</a>
 									</li>
 									<li>
 										<a href="#">Забронировать</a>
 									</li>
 									<li>
-										<a href="#">Цены</a>
+										<a href="#price">Цены</a>
 									</li>
 									<li>
 										<a href="#">Правила</a>
 									</li>
 									<li>
-										<a href="#">Production</a>
+										<a href="#production">Production</a>
 									</li>
 									<li>
-										<a href="#">Контакты</a>
+										<a href="#footer">Контакты</a>
 									</li>
 								</ul>
 							</nav>
@@ -85,7 +98,7 @@
 		</div>
 	</header>
 	<main>
-		<section class="s-hall">
+		<section class="s-hall" id="hall">
 			<div class="container-fluid title-container">
 				<div class="row">
 					<div class="col-12 title-column">
@@ -170,32 +183,32 @@
 					<div class="col-12 galery-column">
 						<div class="galery-column-wrapper">
 							<div class="row no-gutters">
-								<div class="col-4 galery-item">
+								<div class="col-sm-4 col-6 galery-item">
 									<a href="img/g-1.png" data-fancybox="gallery">
 										<img src="img/g-1.png" alt="">
 									</a>
 								</div>
-								<div class="col-4 galery-item">
+								<div class="col-sm-4 col-6 galery-item">
 									<a  href="img/g-2.png" data-fancybox="gallery">
 										<img src="img/g-2.png" alt="">
 									</a>
 								</div>
-								<div class="col-4 galery-item">
+								<div class="col-sm-4 col-6 galery-item">
 									<a href="img/g-3.png" data-fancybox="gallery">
 										<img src="img/g-3.png" alt="">
 									</a>
 								</div>
-								<div class="col-4 galery-item">
+								<div class="col-sm-4 col-6 galery-item">
 									<a href="img/g-4.png" data-fancybox="gallery">
 										<img src="img/g-4.png" alt="">
 									</a>
 								</div>
-								<div class="col-4 galery-item">
+								<div class="col-sm-4 col-6 galery-item">
 									<a href="img/g-5.png" data-fancybox="gallery">
 										<img src="img/g-5.png" alt="">
 									</a>
 								</div>
-								<div class="col-4 galery-item">
+								<div class="col-sm-4 col-6 galery-item">
 									<a href="img/g-6.png" data-fancybox="gallery">
 										<img src="img/g-6.png" alt="">
 									</a>
@@ -213,7 +226,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="s-price-list">
+		<section class="s-price-list" id="price">
 			<div class="container-fluid title-container">
 				<div class="row">
 					<div class="col-12 title-column">
@@ -272,7 +285,7 @@
 				</div>
 			</div>
 		</section>
-		<section class="s-production">
+		<section class="s-production" id="production">
 			<div class="container-fluid title-container">
 				<div class="row">
 					<div class="col-12 title-column">
@@ -430,30 +443,87 @@
 			</div>
 		</section>
 	</main>
-	<footer>
+	<footer id="footer">
 		<div class="map-wrapper">
 			<div class="is-map-box">
 				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2541.416214546513!2d30.37245421526455!3d50.43334759647885!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4cb8428daf223%3A0xa4ac50aa5627d2b8!2z0LLRg9C70LjRhtGPINCv0LrRg9Cx0LAg0JrQvtC70LDRgdCwLCAyLCDQmtC40ZfQsiwgMDIwMDA!5e0!3m2!1suk!2sua!4v1554760786473!5m2!1suk!2sua" allowfullscreen></iframe>
 			</div>
 			<div class="contacts-information">
+				<div class="contacts-information__wrapper">
 				<div class="white-title">
 					Контакты 
 				</div>
 				<div class="contacts-content">
-					<div class="contacts-phone">
-						<span class="cont_icon phone_icon"></span>
+					<div class="contacts-phone contacts-item">
+						<span class="cont_icon phone_icon">
+							<img src="img/call-answer.png" alt="">
+						</span>
 						<a href="tel:+38 096 332 24 24">+38 096 332 24 24</a>
 					</div>
-					<div class="contacts-address">
+					<div class="contacts-address contacts-item">
 						<address>
-							<span class="cont_icon location_icon"></span>
+							<span class="cont_icon location_icon">
+								<img src="img/placeholder-locationilled-point.png" alt="">
+							</span>
 							ул. Якуба Коласа 2В, Киев, Украина
 						</address>
 					</div>
-					<div class="contacts-mail">
-						<span class="cont_icon mail_icon"></span>
+					<div class="contacts-mail contacts-item">
+						<span class="cont_icon mail_icon">
+							<img src="img/email-filled-closed-envelope.png" alt="">
+						</span>
 						<a href="mailto:panoramaproduction2@gmail.com">panoramaproduction2@gmail.com</a>
 					</div>
+					<div class="we-in-social-wrapper">
+						<ul class="we-in-social-list">
+							<li>
+								<a href="#">
+									<span class="we-social we-fb"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="we-social we-insta"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="we-social we-telega"></span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<span class="we-social we-viber"></span>
+								</a>
+							</li>
+						</ul>
+					</div>
+					<div class="white-title">
+						Как к нам добраться:
+					</div>
+					<div class="road">
+						<ol>
+							<li>
+								От станции метро Черниговская: трамвай 22 или 33 (в сторону Ленинградской площади) до остановки “Усенко”
+							</li>
+							<li>
+								От станции метро Лесная: трамвай 8 или 29 до остановки “Усенко”
+							</li>
+							<li>
+								От станции метро Позняки: трамвай 8 до остановки “Усенко”
+							</li>
+							<li>
+								От станции метро Лыбедская или Дружбы народов: маршрутка 590 до остановки “Усенко”
+							</li>
+							<li>
+								От Ленинградской площади: пешком 10 минут
+							</li>
+							<li>
+								С Троещины: маршрутка 590 или трамвай 33 до остановки “Усенко”
+							</li>
+						</ol>
+					</div>
+				</div>
 				</div>
 			</div>
 		</div>
