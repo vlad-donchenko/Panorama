@@ -42,6 +42,7 @@ body{
 	color: #000;
 	line-height: normal;
 	background-color: #fff;
+	overflow-y: auto;
 }
 main {
   flex: 1 0 auto;
@@ -567,10 +568,14 @@ header{
 }
 .contacts-item{
 	margin-bottom: 13px;
+	display: flex;
+	align-items: center;
 }
-.contacts-address address{
+.contacts-address address,
+.contacts-address p{
 	color: #fff;
 	font-style: normal;
+	margin: 0;
 }
 .we-social{
 	display: inline-block;
@@ -592,6 +597,27 @@ header{
 	margin: 0;
 	list-style: none;
 	text-align: center;
+}
+.we-in-social-list a{
+	display: flex;
+	align-items: center;
+	width: 18px;
+	height: 18px;
+	background: #fff;
+	border-radius: 100%;
+	color: #b5b5b4;
+	position: relative;
+	font-size: 12px;
+}
+.we-in-social-list a i{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+}
+.we-in-social-list a:hover{
+	color: #b5b5b4;
+	opacity: 0.7;
 }
 .we-in-social-list li{
 	display: inline-block;
